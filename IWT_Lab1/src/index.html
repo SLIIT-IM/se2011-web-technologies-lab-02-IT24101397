@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Tech Store</title>
 
-    <!-- Internal CSS -->
+   
     <style>
         .about-note {
             background-color: #eef7ff;
@@ -15,7 +15,7 @@
         }
     </style>
 
-    <!-- External CSS -->
+    
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -24,9 +24,11 @@
 
     <header>
         <img src="images/Logo.webp" alt="Campus Tech Store Logo" width="120" class="logo">
-
         <h1>Campus Tech Store</h1>
         <p>Your student-friendly place for tech essentials</p>
+
+       
+        <button id="themeBtn">Toggle Dark Mode</button>
     </header>
 
     <nav>
@@ -40,10 +42,11 @@
     </nav>
 
     <main>
+
         <section id="home">
             <h2>Welcome to Campus Tech Store</h2>
 
-            <!-- Inline CSS -->
+           
             <p style="color: darkgreen; font-weight: bold;">
                 This sentence is styled using inline CSS.
             </p>
@@ -54,13 +57,17 @@
             </p>
 
             <img src="images/hero.png" alt="Students using technology" width="400">
+
+         
+            <button id="welcomeBtn">Click for Welcome Message</button>
+            <p id="welcomeMessage"></p>
         </section>
 
         <section id="products">
             <h2>Our Products</h2>
             <p>Here are some popular items available for students.</p>
 
-            <table class="product-table">
+            <table class="product-table" id="productTable">
                 <tr>
                     <th>Product Name</th>
                     <th>Description</th>
@@ -87,6 +94,25 @@
                     <td>Rs. 2500</td>
                 </tr>
             </table>
+
+            
+            <p><strong>Total Products:</strong> <span id="productCount">0</span></p>
+
+            <label for="priceInput">Enter Product Price:</label><br>
+            <input type="number" id="priceInput" placeholder="Enter price"><br><br>
+
+            <button id="discountBtn">Calculate 10% Student Discount</button>
+            <p id="discountResult"></p>
+
+            
+            <label for="searchInput">Search Product:</label><br>
+            <input type="text" id="searchInput" placeholder="Type product name"><br><br>
+            <button id="searchBtn">Search</button>
+            <p id="searchResult"></p>
+
+            
+            <button id="showProductsBtn">Show All Product Names</button>
+            <ul id="productListDisplay"></ul>
         </section>
 
         <section id="offers">
@@ -97,6 +123,10 @@
                 <li>Free delivery inside campus</li>
                 <li>Free laptop bag with selected items</li>
             </ol>
+
+            
+            <button id="offersBtn">Show Special Offer Message</button>
+            <p id="offersMessage"></p>
         </section>
 
         <section id="about">
@@ -106,7 +136,7 @@
                 technology products for study and daily use.
             </p>
 
-            <!-- Internal CSS Example -->
+            
             <p class="about-note">
                 This note is styled using internal CSS.
             </p>
@@ -119,7 +149,8 @@
         <section id="contact">
             <h2>Contact Us</h2>
 
-            <form class="contact-form">
+           
+            <form class="contact-form" id="contactForm">
                 <label for="fullname">Full Name:</label><br>
                 <input type="text" id="fullname" name="fullname"><br><br>
 
@@ -127,14 +158,18 @@
                 <input type="email" id="email" name="email"><br><br>
 
                 <label for="phone">Phone Number:</label><br>
-                <input type="text" id="phone" name="phone"><br><br>
+                <input type="tel" id="phone" name="phone"><br><br>
 
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
 
                 <input type="submit" value="Send Message">
             </form>
+
+            
+            <p id="formMessage"></p>
         </section>
+
     </main>
 
     <footer>
@@ -142,9 +177,13 @@
         <p>&copy; 2026 Campus Tech Store. All rights reserved.</p>
         <p>Designed for IT1100 HTML Lab</p>
         <p><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools</a></p>
+
+        <!-- Task B: Live clock -->
+        <p id="clock"></p>
     </footer>
 
 </div>
 
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* ===== BASIC PAGE STYLE ===== */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* ===== HEADER ===== */
+
 header {
     text-align: center;
     padding: 20px 0;
@@ -37,7 +37,7 @@ header p {
     font-size: 18px;
 }
 
-/* ===== NAVIGATION ===== */
+
 nav {
     background-color: #1d4d7a;
     margin-top: 15px;
@@ -65,7 +65,7 @@ nav ul li a:hover {
     background-color: #163a5b;
 }
 
-/* ===== SECTIONS ===== */
+
 section {
     padding: 25px 0;
     border-bottom: 1px solid #dddddd;
@@ -80,7 +80,7 @@ section p {
     line-height: 1.6;
 }
 
-/* ===== HERO IMAGE ===== */
+
 #home img {
     display: block;
     margin: 20px auto;
@@ -88,7 +88,6 @@ section p {
     border-radius: 8px;
 }
 
-/* ===== PRODUCT TABLE ===== */
 .product-table {
     width: 100%;
     border-collapse: collapse;
@@ -107,20 +106,19 @@ section p {
     color: white;
 }
 
-/* Alternating row color */
 .product-table tr:nth-child(even) {
     background-color: #f2f7fb;
 }
 
-/* ===== Task D: Hover Effect ===== */
+
 .product-table tr:hover {
     background-color: #dbeeff;
 }
 
-/* ===== STUDENT OFFERS ===== */
+
 #offers {
-    background-color: #fff9db;          /* Task C */
-    border-left: 5px solid #f0c000;     /* Task C */
+    background-color: #fff9db;
+    border-left: 5px solid #f0c000;
     padding: 20px;
 }
 
@@ -132,7 +130,7 @@ section p {
     margin-bottom: 8px;
 }
 
-/* ===== CONTACT FORM ===== */
+
 .contact-form {
     background-color: #f8fbfd;
     padding: 20px;
@@ -144,9 +142,10 @@ section p {
     font-weight: bold;
 }
 
-/* ===== Task E: Phone field included ===== */
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
+.contact-form input[type="tel"],
 .contact-form textarea {
     width: 100%;
     padding: 10px;
@@ -170,7 +169,6 @@ section p {
     background-color: #163a5b;
 }
 
-/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 20px 0 10px 0;
@@ -184,7 +182,6 @@ footer hr {
     margin-bottom: 15px;
 }
 
-/* ===== Task F: Footer link styling ===== */
 footer a {
     color: #1d4d7a;
     text-decoration: none;
@@ -194,4 +191,74 @@ footer a {
 footer a:hover {
     color: red;
     text-decoration: underline;
+}
+
+
+button {
+    background-color: #1d4d7a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #163a5b;
+}
+
+
+#welcomeMessage,
+#discountResult,
+#offersMessage,
+#searchResult,
+#formMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#priceInput,
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode header,
+.dark-mode #offers,
+.dark-mode .contact-form {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+}
+
+.dark-mode nav {
+    background-color: #000000;
+}
+
+.dark-mode .product-table th {
+    background-color: #333333;
+}
+
+.dark-mode .product-table td,
+.dark-mode .product-table tr {
+    color: #f1f1f1;
+}
+
+.dark-mode a {
+    color: #8ec8ff;
 }
